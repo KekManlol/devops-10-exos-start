@@ -21,11 +21,10 @@ const getCurrentMonth = (date = new Date()) => {
 
 const isAdmin = (userId) => userId === "admin" || userId === "sudo";
 
-try {
-    document.getElementById("month").innerText = getCurrentMonth();
-} catch (err) {
-    console.error(JSON.stringify(err));
-}
+const removeNamesWithX = (table) => {
+    return table;
+};
 
 exports.getCurrentMonth = getCurrentMonth;
 exports.isAdmin = isAdmin;
+exports.removeNamesWithX = removeNamesWithX;
