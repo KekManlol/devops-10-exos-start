@@ -22,7 +22,11 @@ const getCurrentMonth = (date = new Date()) => {
 const isAdmin = (userId) => userId === "admin" || userId === "sudo";
 
 const removeNamesWithX = (table) => {
-    return table;
+    const theTable = [];
+    table.forEach((aName) => {
+        if (!aName.toLowerCase().includes("x")) theTable.push(aName);
+    });
+    return theTable;
 };
 
 exports.getCurrentMonth = getCurrentMonth;
