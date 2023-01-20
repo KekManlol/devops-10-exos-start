@@ -8,6 +8,9 @@ const tableRemovedNames2 = ["JeanKevin"];
 const tableRemovedNames3 = ["JC", "Leo"];
 
 describe("test remove names with x function", () => {
+    it("should return an empty table", () => {
+        expect(removeNamesWithX([])).toEqual([]);
+    });
     it("should return tableNames1", () => {
         expect(removeNamesWithX(tableNames1)).toEqual(tableNames1);
     });
