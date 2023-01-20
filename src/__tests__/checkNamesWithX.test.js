@@ -14,4 +14,7 @@ describe("test remove names with x function", () => {
     it("should return tableRemovedNames2", () => {
         expect(removeNamesWithX(tableNames2)).toEqual(tableRemovedNames2);
     });
+    it("should not return tableNames2", () => {
+        expect(removeNamesWithX(tableNames2)).not.toEqual(tableNames2);
+    });
 });
