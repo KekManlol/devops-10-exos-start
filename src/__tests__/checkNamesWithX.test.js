@@ -1,11 +1,11 @@
-const { removeNamesWithX } = require('../app');
+const { removeNamesWithX } = require("../app");
 
-const tableNames1 = ["Momo","Hadji","Leo"];
-const tableNames2 = ["DMX","Xzibit","JeanKevin"];
-const tableNames3 = ["JC","Leo","xena"];
+const tableNames1 = ["Momo", "Hadji", "Leo"];
+const tableNames2 = ["DMX", "Xzibit", "JeanKevin"];
+const tableNames3 = ["JC", "Leo", "xena"];
 
 const tableRemovedNames2 = ["JeanKevin"];
-const tableRemovedNames3 = ["JC","Leo"];
+const tableRemovedNames3 = ["JC", "Leo"];
 
 describe("test remove names with x function", () => {
     it("should return tableNames1", () => {
